@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library System - Image</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+            position: relative;
+        }
+        .image-container {
+            width: 80%;
+            height: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .image-container img {
+            max-width: 100%;
+            max-height: 100%;
+            height: auto;
+            width: auto;
+        }
+        .back-button {
+            padding: 10px 20px;
+            font-size: 14px;
+            background-color: #000000;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .back-button:hover {
+            background-color: #333333;
+        }
+    </style>
+    <script>
+        function getQueryParameter(name) {
+            let urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        }
+
+        window.onload = function() {
+            let imageSrc = getQueryParameter('src');
+            let imageAlt = getQueryParameter('alt');
+            if (imageSrc) {
+                document.getElementById('mainImage').src = imageSrc;
+                document.getElementById('mainImage').alt = imageAlt;
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <main class="content">
+            <div class="image-container">
+                <img id="mainImage" src="" alt="">
+            </div>
+        </main>
+        <button class="back-button" onclick="history.back()">Back</button>
+    </div>
+</body>
+</html>

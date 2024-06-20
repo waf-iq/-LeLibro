@@ -1,0 +1,974 @@
+/* General styles */
+body {
+    font-family: 'Roboto Mono', Arial, sans-serif;
+    background-color: #867a7a;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    background-color: #a69b9b;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Sidebar styles */
+.sidebar {
+    width: 250px;
+    background-color: #BDA5A5;
+    padding: 20px;
+    border-right: 1px solid #9b9595;
+}
+
+.sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin-bottom: 20px;
+}
+
+.sidebar nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.sidebar nav ul li a:hover {
+    background-color: #9b9595;
+    text-decoration: underline;
+}
+
+/* Content styles */
+.content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.home-container, .books-container, .authors-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.books-container h2, .authors-container h2 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: left; /* Align header to the left */
+    padding-left: 20px; /* Add padding to align with images */
+}
+
+.image-container, .author-images {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.image-container img {
+    width: 150px; /* Adjust the width as needed */
+    height: 200px; /* Ensure the height is fixed to make it rectangular */
+    border: 2px solid #fff;
+    border-radius: 5px;
+    transition: transform 0.3s ease; /* Add transition for smooth scaling */
+}
+
+.author-images img {
+    width: 80px; /* Adjust the width as needed */
+    height: 80px; /* Ensure the height is fixed to make it rectangular */
+    border: 2px solid #fff;
+    border-radius: 5px;
+    transition: transform 0.3s ease; /* Add transition for smooth scaling */
+}
+
+
+
+
+.image-container img:hover, .author-images img:hover {
+    transform: scale(1.05); /* Scale the image slightly on hover */
+}
+
+.image-container p, .books-container-images p, .author-images p {
+    font-size: 12px;
+    color: #666;
+}
+
+/* Login page styles */
+.login-container {
+    background-color: #ac9090;
+    padding: 60px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+h2 {
+    margin-bottom: 40px;
+    text-align: center;
+    color: #8c6d6d;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+input {
+    width: calc(100% - 16px);
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #020202;
+    border: none;
+    border-radius: 6px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #000;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Find a book page styles */
+.find-book-container {
+    text-align: center;
+}
+
+.find-book-container form {
+    margin-bottom: 20px;
+}
+
+.find-book-container label {
+    font-size: 18px;
+    color: #333;
+}
+
+.find-book-container input {
+    width: calc(100% - 32px);
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.find-book-container button {
+    padding: 10px 20px;
+    background-color: #020202;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.find-book-container button:hover {
+    background-color: #000;
+}
+
+#searchResults {
+    text-align: left;
+    margin-top: 20px;
+}
+
+/* Settings page styles */
+.settings-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.settings-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.settings-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-photo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.settings-container label {
+    align-self: flex-start;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.settings-container input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.settings-container button {
+    padding: 12px;
+    background-color: #020202;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.settings-container button:hover {
+    background-color: #000;
+}
+
+/* Signup page styles */
+.signup-container {
+    margin-top: 50px;
+}
+
+.signup-container h1 {
+    text-align: center;
+}
+
+.signup-container form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.signup-container label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.signup-container input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.signup-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #020202;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.signup-container button:hover {
+    background-color: #000;
+}
+
+/* Contact us page styles */
+.contact-us-container textarea {
+    width: calc(100% - 20px);
+    height: 200px; /* Set the height to 200px or adjust as needed */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Move the icons lower */
+}
+
+.icon-link {
+    color: #ccc; /* Make the icons grey */
+    font-size: 24px; /* Make the icons larger */
+    margin: 0 10px; /* Add some space between the icons */
+}
+
+/* Library information page styles */
+
+
+.library-info-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #ded2d2; /* Add a background color for contrast */
+    border-radius: 8px; /* Add some border radius */
+    box-shadow: 0 0 10px rgba(203, 198, 198, 0.1); /* Add some shadow for depth */
+}
+
+.library-info-container h1 {
+    margin-bottom: 20px;
+}
+
+.library-info-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text-content {
+    flex: 1;
+    margin-right: 20px; /* Add some space between text and image */
+}
+
+.text-content p {
+    margin-bottom: 20px;
+}
+
+.image-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.library-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    animation: zoomInOut 5s infinite ease-in-out; /* Add animation to the image */
+}
+
+@keyframes zoomInOut {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3b3838;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #000000;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #9b9595;
+    }
+
+    .content {
+        padding: 10px;
+    }
+
+    .library-info-content {
+        flex-direction: column;
+    }
+
+    .text-content {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .image-content {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar nav ul li a {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .login-container, .signup-container, .settings-container {
+        padding: 20px;
+        width: 90%;
+    }
+
+    .btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+/*admin*/
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #867a7a;
+    margin: 0;
+    display: flex;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    background-color: #fff;
+}
+
+/* Sidebar styles */
+.sidebar {
+    width: 200px;
+    background-color: #BDA5A5; /* Matches the student page's sidebar color */
+    color: #bbb1b1;
+    min-height: 100vh;
+    padding-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    flex: 1; 
+}
+
+.sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin: 15px 0;
+}
+
+.sidebar nav ul li a {
+    color: #514e4e;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+.sidebar nav ul li a:hover {
+    background-color: #c09090; /* Hover effect color */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1000px) {
+    .sidebar {
+        width: 100%; /* Adjust width for smaller screens */
+        position: static; /* Remove fixed positioning */
+    }
+
+    .sidebar nav ul li {
+        margin: 10px 0; /* Smaller margin for list items */
+    }
+}
+
+
+
+
+
+
+
+/* Content styles */
+.content {
+    margin-left: 240px; /* Increased margin to push content further right */
+    padding: 20px;
+    background-color: #f1ecec;
+    width: calc(100% - 240px); /* Adjusted width to take up remaining space */
+}
+
+h1 {
+    color: #000; /* Adjusted to hexadecimal shorthand */
+    font-size: 24px; /* Larger font size for heading */
+    margin-bottom: 10px; /* Added margin bottom for spacing */
+}
+
+h2 {
+    color: #000; /* Adjusted to hexadecimal shorthand */
+    font-size: 18px; /* Smaller font size for headings */
+    margin-bottom: 10px; /* Added margin bottom for spacing */
+}
+
+p {
+    color: #8d7f7f;
+    font-size: 14px; /* Smaller font size for paragraphs */
+    line-height: 1.5; /* Improved line height for readability */
+}
+
+/* Notification and Messages Sections */
+.notifications ul, .messages ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.notifications ul li, .messages ul li {
+    background-color: #fff;
+    margin-bottom: 10px; /* Increased margin bottom for spacing */
+    padding: 10px; /* Increased padding for better visual separation */
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    width: calc(100% - 20px); /* Ensure it fits within the container */
+    box-sizing: border-box;
+    font-size: 14px; /* Smaller font size for list items */
+}
+
+.messages ul li strong {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold; /* Ensure strong tag is bold */
+}
+
+/* Response Form */
+.response-form {
+    margin-top: 10px;
+    font-size: 14px; /* Smaller font size for form */
+    display: flex;
+    align-items: center;
+}
+
+.response-form input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    font-size: 14px; /* Smaller font size for input */
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-right: 10px; /* Increased margin right for spacing */
+}
+
+.response-form button {
+    font-size: 14px; /* Smaller font size for button */
+    padding: 8px 12px; /* Adjusted padding for button */
+    background-color: #99b299;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    max-width: 100px; /* Adjust the maximum width of the button */
+    white-space: nowrap; /* Prevent button from wrapping */
+    text-align: center; /* Center text in button */
+}
+
+.response-form button:hover {
+    background-color: #45a049;
+}
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #BDA5A5;
+    color: #fff;
+    padding: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+.sidebar a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+h2 {
+    color: #000;
+}
+
+p {
+    color: #555;
+}
+
+.student-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.student-list li {
+    background-color: #fff;
+    margin-bottom: 8px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+}
+
+.student-list li .label {
+    font-weight: bold;
+    color: #333; /* Label color */
+    margin-right: 10px;
+    text-align: right;
+}
+
+.student-list li .student-name,
+.student-list li .student-id,
+.student-list li .registration-date {
+    color: #777;
+    text-align: right;
+}
+/* General styles */
+
+.book-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 950px;
+}
+
+.book-table th, .book-table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.book-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.book-image {
+    max-width: 152px;
+    height: auto;
+}
+
+.add-button, .remove-button {
+    padding: 8px 16px;
+    font-size: 14px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.add-button:hover, .remove-button:hover {
+    background-color: #333333;
+}
+
+@media (max-width: 900px) {
+    .sidebar {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .sidebar ul {
+        display: inline-block;
+    }
+    
+    .content {
+        padding: 10px;
+    }
+}
+/* styles.css */
+
+/* Base styles */
+
+/* Example of a responsive container */
+/* Responsive styles */
+
+/* Example: Adjust sidebar width for smaller screens */
+@media (max-width:768px) {
+    .sidebar {
+        width: 100%;
+    }
+}
+
+/* Additional media queries and styles for different screen sizes */
+@media (max-width: 480px) {
+    /* Example: Adjust font sizes or layout for smaller screens */
+    .sidebar nav ul li {
+        margin-bottom: 5px;
+    }
+
+    .sidebar nav ul li a {
+        font-size: 14px;
+    }
+
+    /* Additional adjustments as needed */
+}
+
+.notifications {
+    margin-top: 20px;
+}
+
+.notifications h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.notifications ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.notifications ul li {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .content {
+        padding: 10px;
+    }
+}
+.manage-books-container {
+    margin-top: 330px;
+}
+
+.manage-books-container form {
+    margin-bottom: 20px;
+}
+
+.manage-books-container label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.manage-books-container input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.manage-books-container button {
+    padding: 10px 20px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.manage-books-container button:hover {
+    background-color: #000000;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .content {
+        padding: 10px;
+    }
+}
+.user-table-container {
+    margin-top: 20px;
+}
+
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.user-table th, .user-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.user-table th {
+    background-color: #f2f2f2;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .content {
+        padding: 10px;
+    }
+
+    .user-table th, .user-table td {
+        padding: 5px;
+    }
+}
+textarea {
+    width: 95%;
+    height: 200px;
+    resize: none; /* Prevents resizing */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+
+
+/* Main content area */
+.content {
+    margin-left: 250px; /* Adjust for sidebar width */
+    padding: 20px;
+}
+
+/* Media query for small screens */
+@media screen and (max-width: 768px) {
+    .sidebar {
+        left: -250px;
+    }
+
+    .sidebar.active {
+        left: 0;
+    }
+
+    .content {
+        margin-left: 0;
+    }
+}
+/* Hamburger Menu Icon */
+.hamburger {
+    display: block;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+
+
+.hamburger.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Example for Flexbox */
+    }
+}
+/* Styles for hamburger menu icon */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 1000;
+}
+
+.hamburger span {
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg);
+    position: relative;
+    top: 8px;
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg);
+    position: relative;
+    top: -8px;
+}
+

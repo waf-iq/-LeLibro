@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library System - Home</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Hamburger Menu Icon -->
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="librarian_welcome.html">Home</a></li>
+                    <li><a href="manage_books.html">Manage Books</a></li>
+                    <li><a href="issue_books.html">Issue Books</a></li>
+                    <li><a href="return_books.html">Return Books</a></li>
+                    <li><a href="view_users.html">View Users</a></li>
+                    <li><a href="contact_support.html">Contact Support</a></li>
+                    <li><a href="project.html">Logout</a></li>
+                </ul>
+            </nav>
+        </aside>
+        
+        <main class="content">
+            <h1>Hello Librarian</h1>
+            <p>Today is 12-6-2024</p>
+            <section class="notifications">
+                <h2>Notifications</h2>
+                <ul>
+                    <li>New book released: "The Great Gatsby" by F. Scott Fitzgerald</li>
+                    <li>New student enrolled: Salma Amarah</li>
+                    <li>Message from admin: "Monthly meeting scheduled for next Friday at 10 AM."</li>
+                    <li>New book released: "1984" by George Orwell</li>
+                    <li>New student enrolled: Sally</li>
+                    <li>Message from admin: "Please update the inventory system by end of the week."</li>
+                    <li>New book released: "To Kill a Mockingbird" by Harper Lee</li>
+                    <li>New student enrolled: Alanoud</li>
+                    <li>Message from admin: "Annual library audit is scheduled for next month."</li>
+                    <li>New book released: "Moby Dick" by Herman Melville</li>
+                    <li>New student enrolled: Sara Ahmad</li>
+                    <li>Message from admin: "Staff training session on using the new cataloging system."</li>
+                    <li>New book released: "Pride and Prejudice" by Jane Austen</li>
+                    <li>New student enrolled: Mahmoud Taha</li>
+                    <li>Message from admin: "Reminder: Return overdue books to avoid fines."</li>
+                </ul>
+            </section>
+        </main>
+    </div>
+
+    <script src="scripts.js"></script>
+    <script>
+        // Toggle sidebar function
+        function toggleSidebar() {
+            var sidebar = document.querySelector('.sidebar');
+            sidebar.classList.toggle('active');
+        }
+
+        // Add event listener to hamburger icon
+        document.getElementById('hamburger').addEventListener('click', function() {
+            toggleSidebar();
+            this.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

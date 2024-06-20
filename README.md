@@ -1,0 +1,13 @@
+the first file that the project will start with is (library_info.html) so only open this fill with open live server and all the web will work ( after you put all the html file in the vs code )
+........................................................................................................
+                                             Student
+for the (student login ) we have :- 1: Home (This page is responsible for displaying new books And the authors) 2: Find a Book (searching for the book you want by name) 3: Settings (If you want to edit or change your name, email, profile picture, password, and username) 4: Borrow Book (If you want to borrow a book, write name of book,author and the Genre) 5: Return Book (If you want to return a book, write name of book,author and the Genre) 6: Contact Us (If you want to communicate with us via email or  via social networking sites :).
+.........................................................................................................
+                                             Admin 
+for the (Admin login) we have :- 1: Home ( displays the latest notifications coming from students or from the librarian and you have the ability to respond to messages.) 2: View Students (You can know the number of students, their names, their ID, and the day of entry) 3: Add Books (This option allows you to choose books for the student that you received from the librarian) 4: Remove Books (This option is the opposite of Add books it removes them) 5: Add Student (Enroll Student To LeLibro via studentID, first name ,last name ,Email ,phone number ) 6: Remove Student (Remove student from LeLibro by its stidentID , first name and last name) 7: Add Genres (Adding Genres to LeLibro to increase diversity).
+.........................................................................................................
+                                             librarian
+for the (librarian login) we have :- 1:Home (displays the latest notifications coming from students or from the Admins) 2: Manage Books (you can here add book or remove or update a book by its ISBN ,Title,Author and Genre ) 3: Issue Books (Here you can issue a book for students, whether from the university or from doctors) 4: Return Books (The process of returning the book from the student) 5: View Users (You can view the LeLibro users) 5: Contact Support (If you needed help :).
+.........................................................................................................
+                               DONE AND THANKS FOR USING LELIBRO :)
+                                    

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Students</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        /* Additional styles specific to this page can go here */
+        .student-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .student-list li {
+            background-color: #f2f2f2;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        .student-list .label {
+            font-weight: bold;
+            margin-right: 5px;
+        }
+
+        .student-list .student-name,
+        .student-list .student-id,
+        .student-list .registration-date {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <!-- Sidebar / Hamburger Menu -->
+    <div class="sidebar" id="sidebar">
+        <nav>
+            <ul>
+                <li><a href="admin_dashboard.html">Home</a></li>
+                <li><a href="view_students.html">View Students</a></li>
+                <li><a href="add_books.html">Add Books</a></li>
+                <li><a href="remove_books.html">Remove Books</a></li>
+                <li><a href="add_student.html">Add Student</a></li>
+                <li><a href="remove_student.html">Remove Student</a></li>
+                <li><a href="add_genres.html">Add Genres</a></li>
+                <li><a href="project.html">Logout</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Hamburger Menu Icon -->
+    <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div class="container">
+        <main class="content">
+            <h2>View Students</h2>
+            <p>View number of students.</p>
+            
+            <ul class="student-list">
+                <li>
+                    <div>
+                        <span class="label">Name:</span>
+                        <span class="student-name">Salma</span>
+                    </div>
+                    <div>
+                        <span class="label">ID:</span>
+                        <span class="student-id">22000885</span>
+                    </div>
+                    <div>
+                        <span class="label">Registration Date:</span>
+                        <span class="registration-date">2024-06-9</span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <span class="label">Name:</span>
+                        <span class="student-name">alanoud</span>
+                    </div>
+                    <div>
+                        <span class="label">ID:</span>
+                        <span class="student-id">22000304</span>
+                    </div>
+                    <div>
+                        <span class="label">Registration Date:</span>
+                        <span class="registration-date">2024-06-2</span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <span class="label">Name:</span>
+                        <span class="student-name">ahmad</span>
+                    </div>
+                    <div>
+                        <span class="label">ID:</span>
+                        <span class="student-id">22000961</span>
+                    </div>
+                    <div>
+                        <span class="label">Registration Date:</span>
+                        <span class="registration-date">2024-05-28</span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <span class="label">Name:</span>
+                        <span class="student-name">sara</span>
+                    </div>
+                    <div>
+                        <span class="label">ID:</span>
+                        <span class="student-id">22000991</span>
+                    </div>
+                    <div>
+                        <span class="label">Registration Date:</span>
+                        <span class="registration-date">2024-05-21</span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <span class="label">Name:</span>
+                        <span class="student-name">mahmoud</span>
+                    </div>
+                    <div>
+                        <span class="label">ID:</span>
+                        <span class="student-id">22000871</span>
+                    </div>
+                    <div>
+                        <span class="label">Registration Date:</span>
+                        <span class="registration-date">2024-05-18</span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <span class="label">Name:</span>
+                        <span class="student-name">Eman</span>
+                    </div>
+                    <div>
+                        <span class="label">ID:</span>
+                        <span class="student-id">22000654</span>
+                    </div>
+                    <div>
+                        <span class="label">Registration Date:</span>
+                        <span class="registration-date">2024-05-6</span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <span class="label">Name:</span>
+                        <span class="student-name">omar</span>
+                    </div>
+                    <div>
+                        <span class="label">ID:</span>
+                        <span class="student-id">22000491</span>
+                    </div>
+                    <div>
+                        <span class="label">Registration Date:</span>
+                        <span class="registration-date">2024-05-1</span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <span class="label">Name:</span>
+                        <span class="student-name">ibrahem</span>
+                    </div>
+                    <div>
+                        <span class="label">ID:</span>
+                        <span class="student-id">22000342</span>
+                    </div>
+                    <div>
+                        <span class="label">Registration Date:</span>
+                        <span class="registration-date">2024-04-30</span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <span class="label">Name:</span>
+                        <span class="student-name"> rola</span>
+                    </div>
+                    <div>
+                        <span class="label">ID:</span>
+                        <span class="student-id">22000061</span>
+                    </div>
+                    <div>
+                        <span class="label">Registration Date:</span>
+                        <span class="registration-date">2024-04-20</span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <span class="label">Name:</span>
+                        <span class="student-name">reem</span>
+                    </div>
+                    <div>
+                        <span class="label">ID:</span>
+                        <span class="student-id">22000556</span>
+                    </div>
+                    <div>
+                        <span class="label">Registration Date:</span>
+                        <span class="registration-date">2024-04-16</span>
+                    </div>
+                </li>
+
+
+
+
+            </ul>
+        </main>
+    </div>
+
+    <script>
+        document.getElementById('hamburger').onclick = function() {
+            var sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

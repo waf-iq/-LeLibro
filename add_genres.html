@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Genres - Library System</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Move these styles to styles.css */
+        .book-image {
+            width: 100px;
+            height: 150px;
+            object-fit: cover;
+        }
+        .add-button {
+            padding: 5px 10px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        .book-table-container {
+            margin-top: 20px;
+        }
+        .book-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .book-table th, .book-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        .book-table th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="admin_dashboard.html">Home</a></li>
+                    <li><a href="view_students.html">View Students</a></li>
+                    <li><a href="add_books.html">Add Books</a></li>
+                    <li><a href="remove_books.html">Remove Books</a></li>
+                    <li><a href="add_student.html">Add Student</a></li>
+                    <li><a href="remove_student.html">Remove Student</a></li>
+                    <li><a href="add_genres.html">Add Genres</a></li>
+                    <li><a href="project.html">Logout</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="content">
+            <h2>Add Genres</h2>
+            <p>Add new genres for categorizing books.</p>
+            <div class="book-table-container">
+                <table class="book-table">
+                    <thead>
+                        <tr>
+                            <th>Image</th>
+                            <th>Genre Title</th>
+                            <th>Add</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="i34 .png" alt="Genre Image 1" class="book-image"></td>
+                            <td>Horror</td>
+                            <td><button class="add-button">Add</button></td>
+                        </tr>
+                        <tr>
+                            <td><img src="i35.png" alt="Genre Image 2" class="book-image"></td>
+                            <td>Documentary</td>
+                            <td><button class="add-button">Add</button></td>
+                        </tr>
+                        <tr>
+                            <td><img src="i36.png" alt="Genre Image 3" class="book-image"></td>
+                            <td>Drama</td>
+                            <td><button class="add-button">Add</button></td>
+                        </tr>
+                        <tr>
+                            <td><img src="i37.png" alt="Genre Image 4" class="book-image"></td>
+                            <td>Fiction</td>
+                            <td><button class="add-button">Add</button></td>
+                        </tr>
+                        <tr>
+                            <td><img src="i2.png" alt="Genre Image 5" class="book-image"></td>
+                            <td>Comic</td>
+                            <td><button class="add-button">Add</button></td>
+                        </tr>
+                        <tr>
+                            <td><img src="i3.png" alt="Genre Image 6" class="book-image"></td>
+                            <td>Sciences</td>
+                            <td><button class="add-button">Add</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

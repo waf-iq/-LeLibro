@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Users - Library System</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+    <div class="container">
+        <!-- Hamburger menu icon -->
+        <div class="hamburger" onclick="toggleSidebar()">
+            &#9776; <!-- Unicode for hamburger icon -->
+        </div>
+
+
+
+    <div class="container">
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="librarian_welcome.html">Home</a></li>
+                    <li><a href="manage_books.html">Manage Books</a></li>
+                    <li><a href="issue_books.html">Issue Books</a></li>
+                    <li><a href="return_books.html">Return Books</a></li>
+                    <li><a href="view_users.html">View Users</a></li>
+                    <li><a href="contact_support.html">Contact Support</a></li>
+                    <li><a href="project.html">Logout</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="content">
+            <h1>View Users</h1>
+            <div class="user-table-container">
+                <table class="user-table">
+                    <thead>
+                        <tr>
+                            <th>User ID</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Role</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>salma amarah</td>
+                            <td>salma.amarah2004@gmail.com</td>
+                            <td>Student</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>mohamd </td>
+                            <td>mahamd.5672@gmail.com</td>
+                            <td>Student</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Michael Johnson</td>
+                            <td>michael.johnson@gmail.com</td>
+                            <td>Faculty</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Sara</td>
+                            <td>sara@gmail.com</td>
+                            <td>Student</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Omar</td>
+                            <td>omar@gmail.com</td>
+                            <td>Student</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Muhammad</td>
+                            <td>muhammad@gmail.com</td>
+                            <td>Student</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Hisham</td>
+                            <td>hisham@gmail.com</td>
+                            <td>Student</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Yazan</td>
+                            <td>yazan@gmail.com</td>
+                            <td>Student</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>Amira</td>
+                            <td>amira@gmail.com</td>
+                            <td>Student</td>
+                        </tr>
+                        <!-- More user rows as needed -->
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+    <script>
+        function toggleSidebar() {
+            var sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('active');
+        }
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library System - Login</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+
+    <style>
+        .login-container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .login-container h2 {
+            margin-bottom: 20px;
+        }
+
+        .login-container label {
+            display: block;
+            margin-top: 10px;
+            text-align: left;
+        }
+
+        .login-container input {
+            width: calc(100% - 20px);
+            padding: 8px;
+            margin-top: 5px;
+        }
+
+        .login-container button {
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #000000;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .login-container button:hover {
+            background-color: #5e5e5e;
+        }
+
+        .error-message {
+            color: red;
+            margin-top: 10px;
+        }
+
+        .home-button-container {
+            margin-top: 20px;
+        }
+
+        .home-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #080808;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .home-button:hover {
+            background-color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login to LeLibro</h2>
+        <form id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Login</button>
+            <p id="errorMessage" class="error-message"></p>
+        </form>
+        <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+        <div class="home-button-container">
+            <a href="library_info.html" class="home-button">Home</a>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

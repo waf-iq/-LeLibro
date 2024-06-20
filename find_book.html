@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find a Book - Library System</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="hamburger" onclick="toggleSidebar()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <aside class="sidebar closed">
+            <nav>
+                <ul>
+                    <li><a href="student_welcome.html">Home</a></li>
+                    <li><a href="find_book.html">Find a Book</a></li>
+                    <li><a href="settings.html">Settings</a></li>
+                    <li><a href="save_book.html">borrow Book</a></li>
+                    <li><a href="remove_book.html">return Book</a></li>
+                    <li><a href="contact_us.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="content">
+            <div class="find-book-container">
+                <h1>Find a Book</h1>
+                <form id="findBookForm">
+                    <label for="searchTerm">Search:</label>
+                    <input type="text" id="searchTerm" name="searchTerm" required>
+                    <button type="submit">Search</button>
+                </form>
+                <div id="searchResults">
+                    <!-- Search results will be displayed here -->
+                </div>
+            </div>
+        </main>
+    </div>
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.classList.toggle('open');
+        }
+    </script>
+    <script src="scripts.js"></script>
+</body>
+</html>

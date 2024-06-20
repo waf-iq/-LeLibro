@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Return a Book - Library System</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Hamburger Menu Icon -->
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="student_welcome.html">Home</a></li>
+                    <li><a href="find_book.html">Find a Book</a></li>
+                    <li><a href="settings.html">Settings</a></li>
+                    <li><a href="save_book.html">Borrow Book</a></li>
+                    <li><a href="remove_book.html">Return Book</a></li>
+                    <li><a href="contact_us.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <div class="add-book-container">
+                <h1>Return a Book</h1>
+                <form id="addBookForm">
+                    <label for="title">Book Title:</label>
+                    <input type="text" id="title" name="title" required>
+
+                    <label for="author">Author:</label>
+                    <input type="text" id="author" name="author" required>
+
+                    <label for="genre">Genre:</label>
+                    <input type="text" id="genre" name="genre" required>
+
+                    <button type="submit">Return Book</button>
+                </form>
+            </div>
+        </main>
+    </div>
+
+    <script src="scripts.js"></script>
+    <script>
+        // Toggle sidebar function
+        function toggleSidebar() {
+            var sidebar = document.querySelector('.sidebar');
+            sidebar.classList.toggle('active');
+        }
+
+        // Add event listener to hamburger icon
+        document.getElementById('hamburger').addEventListener('click', function() {
+            toggleSidebar();
+            this.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

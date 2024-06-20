@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="styles.css">
+   
+</head>
+<body>
+    <div class="container">
+        <div class="hamburger" onclick="toggleSidebar()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <aside class="sidebar closed">
+            <nav>
+                <ul>
+                    <li><a href="admin_dashboard.html">Home</a></li>
+                    <li><a href="view_students.html">View Students</a></li>
+                    <li><a href="add_books.html">Add Books</a></li>
+                    <li><a href="remove_books.html">Remove Books</a></li>
+                    <li><a href="add_student.html">Add Student</a></li>
+                    <li><a href="remove_student.html">Remove Student</a></li>
+                    <li><a href="add_genres.html">Add Genres</a></li>
+                    <li><a href="project.html">Logout</a></li> <!-- Updated Logout link -->
+                </ul>
+            </nav>
+        </aside>
+        <main class="content">
+            <div class="home-container"> 
+               
+
+                <!-- Notification Section -->
+                <section class="notifications">
+                    <h2>Notifications</h2>
+                    <ul>
+                        <li>New book added: "The Great Gatsby"</li>
+                        <li>New genre available: "Science Fiction"</li>
+                        <li>Student application received: Salma amarah</li>
+                    </ul>
+                </section>
+
+                <!-- Messages Section -->
+                <section class="messages">
+                    <h2>Messages from Students</h2>
+                    <ul>
+                        <li>
+                            <strong>Alanoud:</strong>
+                            <p>When will the new books be available?</p>
+                            <form onsubmit="handleResponse(event, 'Alanoud')">
+                                <input type="text" name="response" placeholder="Type your response here" required>
+                                <button type="submit">Send</button>
+                            </form>
+                        </li>
+                        <li>
+                            <strong>Mohamad :</strong>
+                            <p>Can you add more books in the fantasy genre?</p>
+                            <form onsubmit="handleResponse(event, 'Mohamad')">
+                                <input type="text" name="response" placeholder="Type your response here" required>
+                                <button type="submit">Send</button>
+                            </form>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        function handleResponse(event, studentName) {
+            event.preventDefault();
+            const response = event.target.response.value;
+            alert('Response to ' + studentName + ': ' + response);
+            // Here you can add code to send the response to the backend
+            event.target.reset();
+        }
+
+        function toggleSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.classList.toggle('open');
+        }
+    </script>
+</body>
+</html>

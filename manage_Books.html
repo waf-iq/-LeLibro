@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Books - Library System</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Hamburger Menu Icon -->
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="librarian_welcome.html">Home</a></li>
+                    <li><a href="manage_books.html">Manage Books</a></li>
+                    <li><a href="issue_books.html">Issue Books</a></li>
+                    <li><a href="return_books.html">Return Books</a></li>
+                    <li><a href="view_users.html">View Users</a></li>
+                    <li><a href="contact_support.html">Contact Support</a></li>
+                    <li><a href="project.html">Logout</a></li>
+                </ul>
+            </nav>
+        </aside>
+        
+        <main class="content">
+            <h1>Manage Books</h1>
+            <div class="manage-books-container">
+                <h2>Add a New Book</h2>
+                <form id="addBookForm">
+                    <label for="title">Book Title:</label>
+                    <input type="text" id="title" name="title" required>
+
+                    <label for="author">Author:</label>
+                    <input type="text" id="author" name="author" required>
+
+                    <label for="genre">Genre:</label>
+                    <input type="text" id="genre" name="genre" required>
+
+                    <label for="isbn">ISBN:</label>
+                    <input type="text" id="isbn" name="isbn" required>
+
+                    <button type="submit">Add Book</button>
+                </form>
+                
+                <h2>Remove a Book</h2>
+                <form id="removeBookForm">
+                    <label for="isbnRemove">ISBN:</label>
+                    <input type="text" id="isbnRemove" name="isbnRemove" required>
+
+                    <button type="submit">Remove Book</button>
+                </form>
+                
+                <h2>Update Book Details</h2>
+                <form id="updateBookForm">
+                    <label for="isbnUpdate">ISBN:</label>
+                    <input type="text" id="isbnUpdate" name="isbnUpdate" required>
+
+                    <label for="newTitle">New Title:</label>
+                    <input type="text" id="newTitle" name="newTitle">
+
+                    <label for="newAuthor">New Author:</label>
+                    <input type="text" id="newAuthor" name="newAuthor">
+
+                    <label for="newGenre">New Genre:</label>
+                    <input type="text" id="newGenre" name="newGenre">
+
+                    <button type="submit">Update Book</button>
+                </form>
+            </div>
+        </main>
+    </div>
+
+    <script src="scripts.js"></script>
+    <script>
+        // Toggle sidebar function
+        function toggleSidebar() {
+            var sidebar = document.querySelector('.sidebar');
+            sidebar.classList.toggle('active');
+        }
+
+        // Add event listener to hamburger icon
+        document.getElementById('hamburger').addEventListener('click', function() {
+            toggleSidebar();
+            this.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

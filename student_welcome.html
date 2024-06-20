@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library System - Home</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Sidebar / Hamburger Menu -->
+    <div class="sidebar" id="sidebar">
+        <nav>
+            <ul>
+                <li><a href="student_welcome.html">Home</a></li>
+                <li><a href="find_book.html">Find a Book</a></li>
+                <li><a href="settings.html">Settings</a></li>
+                <li><a href="save_book.html">Borrow Book</a></li>
+                <li><a href="remove_book.html">Return Book</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+                <li><a href="project.html">Logout</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Hamburger Menu Icon -->
+    <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div class="container">
+        <main class="content">
+            <div class="home-container">
+                <h1>Hello Student</h1>
+            </div>
+            <div class="books-container">
+                <h2>Available Books</h2>
+                <div class="image-container">
+                    <a href="image.html?src=i13.png&alt=Horror">
+                        <img src="i1.png" alt="Horror">
+                        <p>Horror</p>
+                    </a>
+                    <a href="image.html?src=i14.png&alt=Comics">
+                        <img src="i2.png" alt="Comics">
+                        <p>Comics</p>
+                    </a>
+                    <a href="image.html?src=i15.png&alt=Historical">
+                        <img src="i3.png" alt="Historical">
+                        <p>Historical</p>
+                    </a>
+                    <a href="image.html?src=i16.png&alt=Adventure">
+                        <img src="i4.png" alt="Adventure">
+                        <p>Adventure</p>
+                    </a>
+                </div>
+            </div>
+            <div class="authors-container">
+                <h2>Authors</h2>
+                <div class="author-images">
+                    <a href="image.html?src=i17.png&alt=Leo Tolstoy">
+                        <img src="i5.png" alt="Leo Tolstoy">
+                        <p>Leo Tolstoy</p>
+                    </a>
+                    <a href="image.html?src=i18.png&alt=Stan Lee">
+                        <img src="i6.png" alt="Stan Lee">
+                        <p>Stan Lee</p>
+                    </a>
+                    <a href="image.html?src=i19.png&alt=Stephen King">
+                        <img src="i7.png" alt="Stephen King">
+                        <p>Stephen King</p>
+                    </a>
+                    <a href="image.html?src=i20.png&alt=Jules Verne">
+                        <img src="i8.png" alt="Jules Verne">
+                        <p>Jules Verne</p>
+                    </a>
+                    <a href="image.html?src=i21.png&alt=Agatha Christie">
+                        <img src="i9.png" alt="Agatha Christie">
+                        <p>Agatha Christie</p>
+                    </a>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- JavaScript to handle sidebar toggle -->
+    <script>
+        document.getElementById('hamburger').onclick = function() {
+            var sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

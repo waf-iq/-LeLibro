@@ -1,7 +1,7 @@
 const cacheName = 'lelibro-cache-v1';
 const assetsToCache = [
   '/',
-  'library_info.html',  // Add other HTML files here
+  'index.html',  // Add other HTML files here
 
   '/styles.css',  // Add your CSS files here
   '/scripts.js',  // Add your JS files here

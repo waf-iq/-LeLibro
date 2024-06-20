@@ -2,7 +2,7 @@
   "name": "HCI main WebApp",
   "short_name": "LeLibro",
   "description": "Library system",
-  "start_url": "library_info.html",
+  "start_url": "index.html",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#000000",
